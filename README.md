@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/minute.gif" height="300" />
+</p>
+
 ## Concept
 There a quite a few articles about electronic projects using a grid arrangement of multiple analog clocks to form a mechanical digital clock such as [this one](http://hackaday.io/project/163582-digital-clock-made-of-analog-clocks). Even though they are visually pleasing with numerous rotating pointers and are definitely interesting engineering projects, these clocks require a lot of dual shaft stepper motors to display just one single number. Also, the use of such an arrangement doesn't allow a clean representation of all the 7-segements digits and the pointers that not used for particular time displays will be hanging around leaving visible lines at random places. Human since 1982, the creator of [A million Times](https://www.humanssince1982.com/a-million-times) claims the copyright over such clock displays.
 
@@ -72,7 +76,7 @@ The servo motors consuming lots of current, their voltage is provided through a 
 The D1 mini is the microcontroller of the circuit, it communicates with both the PWM driver and the real-time clock through an I2C interface. Four push buttons, used for start & stop, reset and setting the time, are connected to the GPIO pins D5, D6 and D7 which are pulled high internally while D8 is pulled low on the ESP8266 module board. If more than 16 servo motors are used in a setup, another PCA9685 driver can be connected via pin headers P1 or P2. 
 
 <p align="center">
-  <img src="images/schematics.PNG" width="300" />
+  <img src="images/schematics.png" width="300" />
 </p>
 
 ### Display
@@ -80,20 +84,20 @@ In the [Concept](#concept) section, the arrangement of the rotating axes has alr
 For this project, the prototype assembly incorporates 8 servos allowing the composition of 2 digits. The outline dimensions are chosen so that the rotating pointers should never exceed the border. Both digits are placed 20 mm apart from each other for convenience. This results in an outline size of 100 mm by 80 mm. The pointers of each rotating axis are arranged as planned out previously and, to hide the ones turning outside of the digit display, a front plate is placed on top.
 
 <p align="center">
-  <img src="images/servo-arrangement.PNG" height="200" />
-  <img src="images/servo-arrangement-display.PNG" height="200" />
+  <img src="images/servo-arrangement.png" height="200" />
+  <img src="images/servo-arrangement-display.png" height="200" />
 </p>
 
 ### Mechanical parts
 The mechanical parts for the assembly were designed in [Tinkercad](https://www.tinkercad.com/). The mounting plate has holes to install the 8 servo motors at their exact position while the purpose of the front plate is to hide out-sticking pointers and only show the digit displays. Both of these plates can be held together by fixing M3 screws in the corners. For the design of the rotating elements, the left pointers had to be higher than the right ones because they overlap with each other in the space between the digit displays.
 
 <p align="center">
-  <img src="images/mounting-plate.PNG" height="200" />
-  <img src="images/front-plate.PNG" height="200" />
-  <img src="images/pointers-topside.PNG" height="200" />
-  <img src="images/assembly.PNG" height="200" />
-  <img src="images/assembly-side.PNG" height="200" />
-  <img src="images/assembly-front.PNG" height="200" />
+  <img src="images/mounting-plate.png" height="200" />
+  <img src="images/front-plate.png" height="200" />
+  <img src="images/pointers-topside.png" height="200" />
+  <img src="images/assembly.png" height="200" />
+  <img src="images/assembly-side.png" height="200" />
+  <img src="images/assembly-front.png" height="200" />
 </p>
 
 ### PCB
@@ -101,8 +105,8 @@ The size of the PCB is the same as the assembly outline so it can be fixed to th
 
 <p align="center">
   <img src="images/PCB-back.JPG" height="200" />
-  <img src="images/PCB-front.JPG" height="200" />
-  <img src="images/PCB-mounted.JPG" height="200" />
+  <img src="images/PCB-front.jpg" height="200" />
+  <img src="images/PCB-mounted.jpg" height="200" />
 </p>
 
 ### Assembly
@@ -124,9 +128,14 @@ Next, in the Arduino program, each pointer is configured so that they align as s
   <img src="images/56.JPG" height="200" />
 </p>
 
-<p align="center">
-  <img src="images/minute.gif" height="200" />
-</p>
-
 For now, the program only displays the current time, but with the four buttons on the back of the PCB, other features could be implemented such as manual time setting, stopwatch, button-press counter or days/hours down-counter. Furthermore, with the on-board ESP8266 WiFi chip, the clock could display any two-digit live number fetched from the internet or from another device, such as a weather station.
 
+### Cost
+All parts were bought on Taobao from the manufacturers with the cheapest offers. Delivery costs are not considered as most items have free shipping and/or the charges vary depending on the delivery address. Unit prices for LEDs, capacitor, resistors and pin headers were approximated. The mechanical parts were quite expensive but are very good quality. For the next design, a cheaper alternative will probably be used. the total price sums up to 322.71 RM (45.45 USD).
+
+### Future improvements
+The prototype assembly accomplishes its purpose perfectly fine, the servo transitions are fast and precise without any collisions between pointers. However, there a few improvements to note for a future version.
++ Firstly, to actually act as a clock and display the time, there should be at least 4 digits for minutes and hours. Having another pair of digits for the seconds could also be considered but each servo movement is noisy and can be bothering. Up to 16 servos can be driven by the PCA9685 and so, one PCB is sufficient.
++ The corners of the mechanical plates can be rounded to cover only the rotating pointers and thus reducing the size. This would also give the clock a better aesthetic.
++ Mounting the pointers onto the servo gears is not a stable nor precise method as the gear dimensions were hard to measure and tightly approximated. A better alternative would be to utilize the hole in the gear to screw the pointers on. This would also allow the pointers to sit lower, resulting in a more compact design.
++ Lastly, reading the digits requires a direct line of sight on the assembly because the front plate can hide the pointers when observing the clock from an angle. This can easily be corrected by mounting the front plate as close as possible to the pointers.
