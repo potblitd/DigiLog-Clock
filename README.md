@@ -80,8 +80,8 @@ In the [Concept](#concept) section, the arrangement of the rotating axes has alr
 For this project, the prototype assembly incorporates 8 servos allowing the composition of 2 digits. The outline dimensions are chosen so that the rotating pointers should never exceed the border. Both digits are placed 20 mm apart from each other for convenience. This results in an outline size of 100 mm by 80 mm. The pointers of each rotating axis are arranged as planned out previously and, to hide the ones turning outside of the digit display, a front plate is placed on top.
 
 <p align="center">
-  <img src="images/servo-arrangement.PNG" height="200" />
-  <img src="images/servo-arrangement-display.PNG" height="200" />
+  <img src="images/servo-arrangement.png" height="200" />
+  <img src="images/servo-arrangement-display.png" height="200" />
 </p>
 
 ### Mechanical parts
