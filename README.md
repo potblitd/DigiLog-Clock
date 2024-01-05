@@ -130,3 +130,12 @@ Next, in the Arduino program, each pointer is configured so that they align as s
 
 For now, the program only displays the current time, but with the four buttons on the back of the PCB, other features could be implemented such as manual time setting, stopwatch, button-press counter or days/hours down-counter. Furthermore, with the on-board ESP8266 WiFi chip, the clock could display any two-digit live number fetched from the internet or from another device, such as a weather station.
 
+### Cost
+All parts were bought on Taobao from the manufacturers with the cheapest offers. Delivery costs are not considered as most items have free shipping and/or the charges vary depending on the delivery address. Unit prices for LEDs, capacitor, resistors and pin headers were approximated. The mechanical parts were quite expensive but are very good quality. For the next design, a cheaper alternative will probably be used. the total price sums up to 322.71 RM (45.45 USD).
+
+### Future improvements
+The prototype assembly accomplishes its purpose perfectly fine, the servo transitions are fast and precise without any collisions between pointers. However, there a few improvements to note for a future version.
++ Firstly, to actually act as a clock and display the time, there should be at least 4 digits for minutes and hours. Having another pair of digits for the seconds could also be considered but each servo movement is noisy and can be bothering. Up to 16 servos can be driven by the PCA9685 and so, one PCB is sufficient.
++ The corners of the mechanical plates can be rounded to cover only the rotating pointers and thus reducing the size. This would also give the clock a better aesthetic.
++ Mounting the pointers onto the servo gears is not a stable nor precise method as the gear dimensions were hard to measure and tightly approximated. A better alternative would be to utilize the hole in the gear to screw the pointers on. This would also allow the pointers to sit lower, resulting in a more compact design.
++ Lastly, reading the digits requires a direct line of sight on the assembly because the front plate can hide the pointers when observing the clock from an angle. This can easily be corrected by mounting the front plate as close as possible to the pointers.
