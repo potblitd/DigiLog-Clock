@@ -115,6 +115,8 @@ First of all, the 8 servo motors are inserted into their respective holes in the
   <img src="images/assembly-front.JPG" height="150" />
 </p>
 
+### Code
+
 Next, in the Arduino program, each pointer is configured so that they align as straight as possible. For this, the 3 positions are defined by their average duty cycle value and then, an offset is added for each individual servo. Due to some limitations with this method, not all the pointers could be smoothly aligned here. The rest of the code is straightforward, each transition is defined by the current digit and the next one based on the [sequence](#sequence). The D1 mini continuously checks the current time from the DS3231 RTC and updates the digits on the display.
 
 <p align="center">
