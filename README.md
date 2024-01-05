@@ -44,8 +44,24 @@ The last step of the sequence part is to make sure that the pointers can display
   <img src="images/init.svg" width="400" />
 </p>
 
-Finally, a visual animation is created to get a better understanding of the clock rotations sequence for an ascending counter. 
+Finally, a visual animation is created to get a better understanding of the clock rotations sequence. 
 
 <p align="center">
   <img src="images/clock_animation.gif" width="600" />
+</p>
+
+## Implementation
+### Components
+For the electronic part, which basically controls the movements of the rotating pointers, almost only IoT breakout modules are used in order to keep the wiring and programming simple. The main components are listed below.
++ 8 x SG90 servo motor
++ PCA9685 PWM driver
++ 5V2A DC power supply
++ ESP8266 D1 mini dev board
++ DS3231 RTC module
+
+<p align="center">
+  <img src="images/SG90.JPG" width="200" />
+  <img src="images/PCA9685.JPG" width="200" />
+  <img src="images/D1MINI.JPG" width="200" />
+  <img src="images/DS3231.JPG" width="200" />
 </p>
