@@ -20,7 +20,7 @@ The *Concept* part describes the design and movement sequence of my own version 
 First of all, to hide out-sticking pointers, the surrounding space outside the digit display will be covered. As the digital clock is displayed by rotating pointers, it is clear that one end of each segment should be attached to an axis. In this way, there can be a maximum of 6 spinning elements. This number can be reduced down to 3 by eliminating the common intersections. Now, such an arrangement would be attractive but unfortunately, it would require a full revolution range and almost always separate turns to compose all the digits. Adding one more rotation point, i.e. 4 altogether, this arrangement needs to be verified to satisfy the design considerations set previously by defining the pointers rotation range.
 
 <p align="center">
-  <img src="images/axes.svg" width="400" /> <br/>
+  <img src="images/axes.svg" width="400" /> <br />
   <img src="images/digits.svg" width="800" />
 </p>
 
