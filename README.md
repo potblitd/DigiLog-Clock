@@ -41,15 +41,10 @@ Now that the arrangement of the display is designed, the rotation sequence for e
   <img src="images/timing.svg" width="1000" />
 </p>
 
-The last step of the sequence part is to make sure that the pointers can display the initial digit 0 from anywhere in the sequence and then go to any digit from there. Here again, some transitions have to be completed with shifted movements to avoid collisions between pointers.
+The last step of the sequence part is to make sure that the pointers can display the initial digit 0 from anywhere in the sequence and then go to any digit from there. Here again, some transitions have to be completed with shifted movements to avoid collisions between pointers. Finally, a visual animation is created to get a better understanding of the clock rotations sequence. 
 
 <p align="center">
   <img src="images/init.svg" width="400" />
-</p>
-
-Finally, a visual animation is created to get a better understanding of the clock rotations sequence. 
-
-<p align="center">
   <img src="images/clock_animation.gif" width="600" />
 </p>
 
@@ -76,7 +71,7 @@ The servo motors consuming lots of current, their voltage is provided through a 
 The D1 mini is the microcontroller of the circuit, it communicates with both the PWM driver and the real-time clock through an I2C interface. Four push buttons, used for start & stop, reset and setting the time, are connected to the GPIO pins D5, D6 and D7 which are pulled high internally while D8 is pulled low on the ESP8266 module board. If more than 16 servo motors are used in a setup, another PCA9685 driver can be connected via pin headers P1 or P2. 
 
 <p align="center">
-  <img src="images/schematics.png" width="300" />
+  <img src="images/schematics.png" width="400" />
 </p>
 
 ### Display
@@ -113,25 +108,25 @@ The size of the PCB is the same as the assembly outline so it can be fixed to th
 First of all, the 8 servo motors are inserted into their respective holes in the mounting plate and are fixed with small M2 screws. Then, the pointers can be positioned on the turning gear of the servos by sliding them on like a hat. This design is not exactly fitting so the pointers are not perfectly aligned with each other. After soldering all the components to the PCB, it is put together with the mechanical plates by 20 and 25 mm long M3 standoffs. In this configuration, the PCB is facing outwards where the SG90 cables go around the edges to connect into the PWM driver. By turning the PCB inwards and using longer standoffs, the connection cables stay inside the border outline, forming a compact and closed assembly.
 
 <p align="center">
-  <img src="images/assembly-back.JPG" height="200" />
-  <img src="images/assembly-diag.JPG" height="200" />
-  <img src="images/assembly-side.JPG" height="200" />
-  <img src="images/assembly-front.JPG" height="200" />
+  <img src="images/assembly-back.JPG" height="150" />
+  <img src="images/assembly-diag.JPG" height="150" />
+  <img src="images/assembly-side.JPG" height="150" />
+  <img src="images/assembly-front.JPG" height="150" />
 </p>
 
 Next, in the Arduino program, each pointer is configured so that they align as straight as possible. For this, the 3 positions are defined by their average duty cycle value and then, an offset is added for each individual servo. Due to some limitations with this method, not all the pointers could be smoothly aligned here. The rest of the code is straightforward, each transition is defined by the current digit and the next one based on the [sequence](#sequence). The D1 mini continuously checks the current time from the DS3231 RTC and updates the digits on the display.
 
 <p align="center">
-  <img src="images/24.JPG" height="200" />
-  <img src="images/39.JPG" height="200" />
-  <img src="images/47.JPG" height="200" />
-  <img src="images/56.JPG" height="200" />
+  <img src="images/24.JPG" height="150" />
+  <img src="images/39.JPG" height="150" />
+  <img src="images/47.JPG" height="150" />
+  <img src="images/56.JPG" height="150" />
 </p>
 
 For now, the program only displays the current time, but with the four buttons on the back of the PCB, other features could be implemented such as manual time setting, stopwatch, button-press counter or days/hours down-counter. Furthermore, with the on-board ESP8266 WiFi chip, the clock could display any two-digit live number fetched from the internet or from another device, such as a weather station.
 
 ### Cost
-All parts were bought on Taobao from the manufacturers with the cheapest offers. Delivery costs are not considered as most items have free shipping and/or the charges vary depending on the delivery address. Unit prices for LEDs, capacitor, resistors and pin headers were approximated. The mechanical parts were quite expensive but are very good quality. For the next design, a cheaper alternative will probably be used. the total price sums up to 322.71 RM (45.45 USD).
+All parts were bought on Taobao from the manufacturers with the cheapest offers. Delivery costs are not considered as most items have free shipping and/or the charges vary depending on the delivery address. Unit prices for LEDs, capacitor, resistors and pin headers were approximated. The mechanical parts were quite expensive but are very good quality. For the next design, a cheaper alternative will probably be used. the total price sums up to 322.71 RMB (45.45 USD).
 
 ### Future improvements
 The prototype assembly accomplishes its purpose perfectly fine, the servo transitions are fast and precise without any collisions between pointers. However, there a few improvements to note for a future version.
