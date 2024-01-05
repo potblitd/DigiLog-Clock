@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/minute.gif" height="200" />
+</p>
+
 ## Concept
 There a quite a few articles about electronic projects using a grid arrangement of multiple analog clocks to form a mechanical digital clock such as [this one](http://hackaday.io/project/163582-digital-clock-made-of-analog-clocks). Even though they are visually pleasing with numerous rotating pointers and are definitely interesting engineering projects, these clocks require a lot of dual shaft stepper motors to display just one single number. Also, the use of such an arrangement doesn't allow a clean representation of all the 7-segements digits and the pointers that not used for particular time displays will be hanging around leaving visible lines at random places. Human since 1982, the creator of [A million Times](https://www.humanssince1982.com/a-million-times) claims the copyright over such clock displays.
 
@@ -122,10 +126,6 @@ Next, in the Arduino program, each pointer is configured so that they align as s
   <img src="images/39.JPG" height="200" />
   <img src="images/47.JPG" height="200" />
   <img src="images/56.JPG" height="200" />
-</p>
-
-<p align="center">
-  <img src="images/minute.gif" height="200" />
 </p>
 
 For now, the program only displays the current time, but with the four buttons on the back of the PCB, other features could be implemented such as manual time setting, stopwatch, button-press counter or days/hours down-counter. Furthermore, with the on-board ESP8266 WiFi chip, the clock could display any two-digit live number fetched from the internet or from another device, such as a weather station.
