@@ -41,7 +41,7 @@ Now that the arrangement of the display is designed, the rotation sequence for e
 The last step of the sequence part is to make sure that the pointers can display the initial digit 0 from anywhere in the sequence and then go to any digit from there. Here again, some transitions have to be completed with shifted movements to avoid collisions between pointers.
 
 <p align="center">
-  <img src="images/init.png" height="250" />
+  <img src="images/init.png" width="300" />
 </p>
 
 Finally, a visual animation is created to get a better understanding of the clock rotations sequence for an ascending counter. 
