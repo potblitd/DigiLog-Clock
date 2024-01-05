@@ -88,12 +88,12 @@ For this project, the prototype assembly incorporates 8 servos allowing the comp
 The mechanical parts for the assembly were designed in [Tinkercad](https://www.tinkercad.com/). The mounting plate has holes to install the 8 servo motors at their exact position while the purpose of the front plate is to hide out-sticking pointers and only show the digit displays. Both of these plates can be held together by fixing M3 screws in the corners. For the design of the rotating elements, the left pointers had to be higher than the right ones because they overlap with each other in the space between the digit displays.
 
 <p align="center">
-  <img src="images/mounting-plate.PNG" height="200" />
-  <img src="images/front-plate.PNG" height="200" />
-  <img src="images/pointers-topside.PNG" height="200" />
-  <img src="images/assembly.PNG" height="200" />
-  <img src="images/assembly-side.PNG" height="200" />
-  <img src="images/assembly-front.PNG" height="200" />
+  <img src="images/mounting-plate.png" height="200" />
+  <img src="images/front-plate.png" height="200" />
+  <img src="images/pointers-topside.png" height="200" />
+  <img src="images/assembly.png" height="200" />
+  <img src="images/assembly-side.png" height="200" />
+  <img src="images/assembly-front.png" height="200" />
 </p>
 
 ### PCB
@@ -101,8 +101,8 @@ The size of the PCB is the same as the assembly outline so it can be fixed to th
 
 <p align="center">
   <img src="images/PCB-back.JPG" height="200" />
-  <img src="images/PCB-front.JPG" height="200" />
-  <img src="images/PCB-mounted.JPG" height="200" />
+  <img src="images/PCB-front.jpg" height="200" />
+  <img src="images/PCB-mounted.jpg" height="200" />
 </p>
 
 ### Assembly
