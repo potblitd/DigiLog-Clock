@@ -3,7 +3,7 @@
 There a quite a few articles about electronic projects using a grid arrangement of multiple analog clocks to form a mechanical digital clock such as [this one](http://hackaday.io/project/163582-digital-clock-made-of-analog-clocks). Even though they are visually pleasing with numerous rotating pointers and are definitely interesting engineering projects, these clocks require a lot of dual shaft stepper motors to display just one single number. Also, the use of such an arrangement doesn't allow a clean representation of all the 7-segements digits and the pointers that not used for particular time displays will be hanging around leaving visible lines at random places. Human since 1982, the creator of [A million Times](https://www.humanssince1982.com/a-million-times) claims the copyright over such clock displays.
 
 <p align="center">
-  <img src="images/analogclock.png" height="200" />
+  <img src="images/analogclock.png" height="15" />
 </p>
 
 ### Idea
@@ -13,7 +13,7 @@ The *Concept* part describes the design and movement sequence of my own version 
 + Driven by servo motors, the analog clocks have a maximum of **180 degrees range**
 
 <p align="center">
-  <img src="images/DigiLog-design.png" height="250" />
+  <img src="images/DigiLog-design.png" height="150" />
 </p>
 
 ### Design
