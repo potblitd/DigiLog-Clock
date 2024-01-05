@@ -13,7 +13,7 @@ The *Concept* part describes the design and movement sequence of my own version 
 + Driven by servo motors, the analog clocks have a maximum of **180 degrees range**
 
 <p align="center">
-  <img src="images/DigiLog-design.svg" width="400" />
+  <img src="images/DigiLog-design.svg" width="300" />
 </p>
 
 ### Design
