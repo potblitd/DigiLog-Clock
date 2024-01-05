@@ -34,8 +34,8 @@ By observing the digits 0 to 9, an overview can be obtained of which segments ar
 Now that the arrangement of the display is designed, the rotation sequence for each point can be established to perform an ascending counter. At the beginning, each digit is composed with the allowed positions and is named accordingly. Then, transition movements between the numbers are written down. All the pointers start rotating at the same time on the marking of a new count. This condition can not always be satisfied due to possible collisions of two pointers. In this case, the pointer movements are executed shifted from each other in time with the shortest combination. As representations of digits 5 and 9 have two different solutions, the one with the fastest transition or/and the least moving elements is selected. To better understand the rotations of each individual pointer and their respective timings, a sequence diagram is sketched.
 
 <p align="center">
-  <img src="images/transitions.png" height="300" />
-  <img src="images/timing.png" height="250" />
+  <img src="images/transitions.png" width="1000" />
+  <img src="images/timing.png" width="1000" />
 </p>
 
 The last step of the sequence part is to make sure that the pointers can display the initial digit 0 from anywhere in the sequence and then go to any digit from there. Here again, some transitions have to be completed with shifted movements to avoid collisions between pointers.
