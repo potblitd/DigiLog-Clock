@@ -60,8 +60,8 @@ For the electronic part, which basically controls the movements of the rotating 
 + DS3231 RTC module
 
 <p align="center">
-  <img src="images/SG90.JPG" width="200" />
-  <img src="images/PCA9685.JPG" width="200" />
-  <img src="images/D1MINI.JPG" width="200" />
-  <img src="images/DS3231.JPG" width="200" />
+  <img src="images/SG90.JPG" height="150" />
+  <img src="images/PCA9685.JPG" height="150" />
+  <img src="images/D1MINI.JPG" height="150" />
+  <img src="images/DS3231.JPG" height="150" />
 </p>
