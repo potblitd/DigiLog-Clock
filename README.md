@@ -72,7 +72,7 @@ The servo motors consuming lots of current, their voltage is provided through a 
 The D1 mini is the microcontroller of the circuit, it communicates with both the PWM driver and the real-time clock through an I2C interface. Four push buttons, used for start & stop, reset and setting the time, are connected to the GPIO pins D5, D6 and D7 which are pulled high internally while D8 is pulled low on the ESP8266 module board. If more than 16 servo motors are used in a setup, another PCA9685 driver can be connected via pin headers P1 or P2. 
 
 <p align="center">
-  <img src="images/schematics.PNG" width="300" />
+  <img src="images/schematics.png" width="300" />
 </p>
 
 ### Display
