@@ -44,8 +44,8 @@ Now that the arrangement of the display is designed, the rotation sequence for e
 The last step of the sequence part is to make sure that the pointers can display the initial digit 0 from anywhere in the sequence and then go to any digit from there. Here again, some transitions have to be completed with shifted movements to avoid collisions between pointers. Finally, a visual animation is created to get a better understanding of the clock rotations sequence. 
 
 <p align="center">
-  <img src="images/init.svg" width="400" />
-  <img src="images/clock_animation.gif" width="600" />
+  <img src="images/init.svg" height="300" />
+  <img src="images/clock_animation.gif" height="300" />
 </p>
 
 ## Implementation
