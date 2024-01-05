@@ -45,6 +45,7 @@ The last step of the sequence part is to make sure that the pointers can display
 
 <p align="center">
   <img src="images/init.svg" height="400" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="images/clock_animation.gif" height="400" />
 </p>
 
