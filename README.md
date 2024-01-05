@@ -113,19 +113,19 @@ The size of the PCB is the same as the assembly outline so it can be fixed to th
 First of all, the 8 servo motors are inserted into their respective holes in the mounting plate and are fixed with small M2 screws. Then, the pointers can be positioned on the turning gear of the servos by sliding them on like a hat. This design is not exactly fitting so the pointers are not perfectly aligned with each other. After soldering all the components to the PCB, it is put together with the mechanical plates by 20 and 25 mm long M3 standoffs. In this configuration, the PCB is facing outwards where the SG90 cables go around the edges to connect into the PWM driver. By turning the PCB inwards and using longer standoffs, the connection cables stay inside the border outline, forming a compact and closed assembly.
 
 <p align="center">
-  <img src="images/assembly-back.JPG" height="200" />
-  <img src="images/assembly-diag.JPG" height="200" />
-  <img src="images/assembly-side.JPG" height="200" />
-  <img src="images/assembly-front.JPG" height="200" />
+  <img src="images/assembly-back.JPG" height="150" />
+  <img src="images/assembly-diag.JPG" height="150" />
+  <img src="images/assembly-side.JPG" height="150" />
+  <img src="images/assembly-front.JPG" height="150" />
 </p>
 
 Next, in the Arduino program, each pointer is configured so that they align as straight as possible. For this, the 3 positions are defined by their average duty cycle value and then, an offset is added for each individual servo. Due to some limitations with this method, not all the pointers could be smoothly aligned here. The rest of the code is straightforward, each transition is defined by the current digit and the next one based on the [sequence](#sequence). The D1 mini continuously checks the current time from the DS3231 RTC and updates the digits on the display.
 
 <p align="center">
-  <img src="images/24.JPG" height="200" />
-  <img src="images/39.JPG" height="200" />
-  <img src="images/47.JPG" height="200" />
-  <img src="images/56.JPG" height="200" />
+  <img src="images/24.JPG" height="150" />
+  <img src="images/39.JPG" height="150" />
+  <img src="images/47.JPG" height="150" />
+  <img src="images/56.JPG" height="150" />
 </p>
 
 For now, the program only displays the current time, but with the four buttons on the back of the PCB, other features could be implemented such as manual time setting, stopwatch, button-press counter or days/hours down-counter. Furthermore, with the on-board ESP8266 WiFi chip, the clock could display any two-digit live number fetched from the internet or from another device, such as a weather station.
