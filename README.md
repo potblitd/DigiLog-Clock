@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/minute.gif" height="200" />
+  <img src="images/minute.gif" height="300" />
 </p>
 
 ## Concept
