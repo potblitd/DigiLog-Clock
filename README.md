@@ -31,10 +31,11 @@ First of all, to hide out-sticking pointers, the surrounding space outside the d
 
 <p align="center">
   <img src="images/positions.svg" width="600" />
+  <img src="images/digits.svg" width="600" />
 </p>
 
 ### Sequence
-Now that the arrangement of the display is designed, the rotation sequence for each point can be established to perform an ascending counter. At the beginning, each digit is composed with the allowed positions and is named accordingly. Then, transition movements between the numbers are written down. All the pointers start rotating at the same time on the marking of a new count. This condition can not always be satisfied due to possible collisions of two pointers. In this case, the pointer movements are executed shifted from each other in time with the shortest combination. As representations of digits 5 and 9 have two different solutions, the one with the fastest transition or/and the least moving elements is selected. To better understand the rotations of each individual pointer and their respective timings, a sequence diagram is sketched.
+With the code name for each digit representation, the transition movements between them can are written down. Sometimes, not all the rotating elements can perform the necessary movements simultaneously due to possible collisions of two pointers. In this case, the rotations are executed consecutively in the shortest possible timeframe. To better understand the rotations of each individual pointer and their respective timings, a sequence diagram is sketched.
 
 <p align="center">
   <img src="images/transitions.svg" width="1000" /> <br/><br/>
