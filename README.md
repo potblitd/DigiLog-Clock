@@ -85,9 +85,9 @@ The mechanical parts for the assembly were designed in [Tinkercad](https://www.t
   <img src="images/mounting-plate.png" height="200" />
   <img src="images/front-plate.png" height="200" />
   <img src="images/pointers-topside.png" height="200" />
-  <img src="images/assembly.png" height="200" />
+  <!-- <img src="images/assembly.png" height="200" /> -->
   <img src="images/assembly-side.png" height="200" />
-  <img src="images/assembly-front.png" height="200" />
+  <!-- <img src="images/assembly-front.png" height="200" /> -->
 </p>
 
 ### PCB
