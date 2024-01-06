@@ -44,8 +44,9 @@ Now that the arrangement of the display is designed, the rotation sequence for e
 The last step of the sequence part is to make sure that the pointers can display the initial digit 0 from anywhere in the sequence and then go to any digit from there. Here again, some transitions have to be completed with shifted movements to avoid collisions between pointers. Finally, a visual animation is created to get a better understanding of the clock rotations sequence. 
 
 <p align="center">
-  <img src="images/init.svg" width="400" />
-  <img src="images/clock_animation.gif" width="600" />
+  <img src="images/init.svg" height="400" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="images/clock_animation.gif" height="400" />
 </p>
 
 ## Implementation
@@ -113,6 +114,8 @@ First of all, the 8 servo motors are inserted into their respective holes in the
   <img src="images/assembly-side.JPG" height="150" />
   <img src="images/assembly-front.JPG" height="150" />
 </p>
+
+### Code
 
 Next, in the Arduino program, each pointer is configured so that they align as straight as possible. For this, the 3 positions are defined by their average duty cycle value and then, an offset is added for each individual servo. Due to some limitations with this method, not all the pointers could be smoothly aligned here. The rest of the code is straightforward, each transition is defined by the current digit and the next one based on the [sequence](#sequence). The D1 mini continuously checks the current time from the DS3231 RTC and updates the digits on the display.
 
