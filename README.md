@@ -71,7 +71,7 @@ The D1 mini is the microcontroller of the circuit, it communicates with both the
 
 ### Display
 In the [Concept](#concept) section, the arrangement of the rotating axes has already been established. Now, the positions of the servo motors are determined so as to set the smallest distance between their shafts. For this, they are tilted at 45 degrees separating their interaxial distance by 20 mm. In this configuration, multiple single digits can be arranged next to each other to form an hour-minute-second clock. <br>
-For this project, the prototype assembly incorporates 8 servos allowing the composition of 2 digits. The outline dimensions are chosen so that the rotating pointers should never exceed the border. Both digits are placed 20 mm apart from each other for convenience. This results in an outline size of 100 mm by 80 mm. The pointers of each rotating axis are arranged as planned out previously and, to hide the ones turning outside of the digit display, a front plate is placed on top.
+For this project, the prototype assembly incorporates 8 servos allowing the composition of 2 digits. The outline dimensions are chosen so that the rotating pointers should never exceed the border. Both displays are placed 20 mm apart to avoid interfering each other. This results in an outline size of 100 mm by 80 mm. To hide the pointers turning outside of the digit display, a front plate is placed on top.
 
 <p align="center">
   <img src="images/servo-arrangement.png" height="200" />
