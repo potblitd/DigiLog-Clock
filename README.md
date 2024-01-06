@@ -14,20 +14,20 @@ The main goal is to first design an interface with the fewest single-shaft rotat
 + For cost saving and program simplification reasons, each axis will have **one rotating element**
 + Located on the same physical plane, the pointers can **not collide or overlap** with each other
 + Driven by servo motors, the rotating elements have a maximum of **180 degrees range**
-
+<!--
 <p align="center"> 
-  <! -- <img src="images/DigiLog-design.svg" width="300" />
+  <img src="images/DigiLog-design.svg" width="300" />
 </p>
-
+-->
 ### Design
 First of all, to hide out-sticking pointers, the surrounding space outside the digit display will be covered. As the digital clock is displayed by rotating pointers, it is clear that one end of each segment should be attached to an axis. In this way, the arrangement with the least rotating elements that also meets the requirements set above is sketched below. Each element and its possibles position have been given a code combination to facilitate the movements sequence design and coding.
-
+<!-- 
 <p align="center">
-   <! -- <img src="images/axes.svg" width="400" /> <br/><br/>
-   <! -- <img src="images/digits.svg" width="600" />
+   <img src="images/axes.svg" width="400" /> <br/><br/>
+   <img src="images/digits.svg" width="600" />
 </p>
 
- <! -- By observing the digits 0 to 9, an overview can be obtained of which segments are present for each number, their combinations and transitions. Having only 180 degrees angle of rotation available, three 90-degrees spaced positions have to be defined for each axis. The initial positions are already given from the 8 digit. For the blue pointers, a position completely outside the digit display is needed for a 1 and the one in between, covering the top horizontal segment, for a 2. Similarly from numbers 2 and 4, the rotation range for the green elements can be determined. This is further verified by the fact that both pointers never have to go outside the digit display to compose all the numbers. Digit 1 indicates that the yellow pointer needs one position outside the display and the upper left vertical segment for 0. The remaining two purple positions are simply found from any digits in the sequence. The space coverage for each element and their 3 possible positions are illustrated in the figures below. A label is given to each rotating point as well their positions in order to facilitate notations in the next section. -->
+ By observing the digits 0 to 9, an overview can be obtained of which segments are present for each number, their combinations and transitions. Having only 180 degrees angle of rotation available, three 90-degrees spaced positions have to be defined for each axis. The initial positions are already given from the 8 digit. For the blue pointers, a position completely outside the digit display is needed for a 1 and the one in between, covering the top horizontal segment, for a 2. Similarly from numbers 2 and 4, the rotation range for the green elements can be determined. This is further verified by the fact that both pointers never have to go outside the digit display to compose all the numbers. Digit 1 indicates that the yellow pointer needs one position outside the display and the upper left vertical segment for 0. The remaining two purple positions are simply found from any digits in the sequence. The space coverage for each element and their 3 possible positions are illustrated in the figures below. A label is given to each rotating point as well their positions in order to facilitate notations in the next section. -->
 
 <p align="center">
   <img src="images/positions.svg" width="600" />
