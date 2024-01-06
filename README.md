@@ -110,8 +110,7 @@ The 8 servo motors are inserted into their respective holes in the mounting plat
 </p>
 
 ### Code
-
-Next, in the Arduino program, each pointer is configured so that they align as straight as possible. For this, the 3 positions are defined by their average duty cycle value and then, an offset is added for each individual servo. Due to some limitations with this method, not all the pointers could be smoothly aligned here. The rest of the code is straightforward, each transition is defined by the current digit and the next one based on the [sequence](#sequence). The D1 mini continuously checks the current time from the DS3231 RTC and updates the digits on the display.
+In the Arduino program, the positions for each rotating element is configured so that they align as straight as possible. Due to some fabrication inaccuracies and angle precision limitations, not all the pointers could be smoothly aligned here. For the rest of the code, each transition is defined by the current digit and the next one based on the [sequence](#sequence). The D1 mini checks the current time from the DS3231 RTC and updates the digits on the display.
 
 <p align="center">
   <img src="images/24.JPG" height="150" />
@@ -120,14 +119,13 @@ Next, in the Arduino program, each pointer is configured so that they align as s
   <img src="images/56.JPG" height="150" />
 </p>
 
-For now, the program only displays the current time, but with the four buttons on the back of the PCB, other features could be implemented such as manual time setting, stopwatch, button-press counter or days/hours down-counter. Furthermore, with the on-board ESP8266 WiFi chip, the clock could display any two-digit live number fetched from the internet or from another device, such as a weather station.
-
 ### Cost
-All parts were bought on Taobao from the manufacturers with the cheapest offers. Delivery costs are not considered as most items have free shipping and/or the charges vary depending on the delivery address. Unit prices for LEDs, capacitor, resistors and pin headers were approximated. The mechanical parts were quite expensive but are very good quality. For the next design, a cheaper alternative will probably be used. the total price sums up to 322.71 RMB (45.45 USD).
+All parts were cheaply bought on Taobao with negligible delivery as most items have free shipping and/or the charges vary depending on the delivery address. Unit prices for LEDs, capacitor, resistors and pin headers were approximated. The mechanical parts were quite expensive but are very good quality. The total price sums up to 322.71 RMB (45.45 USD).
 
 ### Future improvements
-The prototype assembly accomplishes its purpose perfectly fine, the servo transitions are fast and precise without any collisions between pointers. However, there a few improvements to note for a future version.
-+ Firstly, to actually act as a clock and display the time, there should be at least 4 digits for minutes and hours. Having another pair of digits for the seconds could also be considered but each servo movement is noisy and can be bothering. Up to 16 servos can be driven by the PCA9685 and so, one PCB is sufficient.
+The prototype assembly accomplishes its proof-of-concept perfectly fine, the servo transitions are fast and precise enough to beautifully display digits without collisions between pointers. However, there a few improvements to note for the code or for a future version.
++ To actually act as a clock and display the time, there should be at least 4 digits for minutes and hours. Having another pair of digits for the seconds could also be considered but each servo movement is noisy and can be bothering. Up to 16 servos can be driven by the PCA9685 and so, one PCB is sufficient.
 + The corners of the mechanical plates can be rounded to cover only the rotating pointers and thus reducing the size. This would also give the clock a better aesthetic.
-+ Mounting the pointers onto the servo gears is not a stable nor precise method as the gear dimensions were hard to measure and tightly approximated. A better alternative would be to utilize the hole in the gear to screw the pointers on. This would also allow the pointers to sit lower, resulting in a more compact design.
-+ Lastly, reading the digits requires a direct line of sight on the assembly because the front plate can hide the pointers when observing the clock from an angle. This can easily be corrected by mounting the front plate as close as possible to the pointers.
++ Reading the digits requires a direct line of sight on the assembly because the front plate can hide the pointers when observing the clock from an angle. This can easily be corrected by mounting the front plate as close as possible to the pointers.
++ The four buttons on the back of the PCB could be implemented to add other features such as manual time setting, stopwatch, button-press counter or days/hours down-counter.
++ With the on-board ESP8266 WiFi chip, the clock could display live number fetched from the internet or from another device, such as a weather station.
