@@ -3,17 +3,17 @@
 </p>
 
 ## Concept
-There a quite a few articles about electronic projects using a grid arrangement of multiple analog clocks to form a mechanical digital clock such as [this one](http://hackaday.io/project/163582-digital-clock-made-of-analog-clocks). Even though they are visually pleasing with numerous rotating pointers and are definitely interesting engineering projects, these clocks require a lot of dual shaft stepper motors to display just one single number. Also, the use of such an arrangement doesn't allow a clean representation of all the 7-segements digits and the pointers that are not used for particular time displays will be hanging around leaving visible lines at random places. 
+There a quite a few articles about electronic projects using a grid arrangement of multiple analog clocks to form a mechanical digital clock such as [this one](http://hackaday.io/project/163582-digital-clock-made-of-analog-clocks). Even though they are visually pleasing with numerous rotating pointers and are definitely interesting engineering projects, these clocks require a lot of dual shaft stepper motors to display just one single number. Also, the use of such an arrangement doesn't allow a clean representation of all the 7-segements digits and the pointers that are not used for particular time displays will be hanging around leaving visible lines at random places. The *Concept* part describes the design and movement sequence of my own version of a digital clock composed by multiple analog clocks.
 
 <p align="center">
   <img src="images/analogclock.svg" width="400" />
 </p>
 
 ### Idea
-The *Concept* part describes the design and movement sequence of my own version of a digital clock composed by multiple analog clocks. The main goal is to first design an interface with the fewest single rotating axes to properly display all 7-segment digits and then, to elaborate the most effective rotations sequence for a counter. Before getting into the design part of the display, a few considerations need to be set based on the future electronic implementation part of this project.
+The main goal is to first design an interface with the fewest single-shaft rotating axes to properly display all 7-segment digits and then, to elaborate the most effective rotations sequence to create a counter. Before getting into the design part of the display, a few considerations need to be set based on the future electronic implementation part of this project.
 + For cost saving and program simplification reasons, each axis will have **one rotating element**
 + Located on the same physical plane, the pointers can **not collide or overlap** with each other
-+ Driven by servo motors, the analog clocks have a maximum of **180 degrees range**
++ Driven by servo motors, the rotating elements have a maximum of **180 degrees range**
 
 <p align="center">
   <img src="images/DigiLog-design.svg" width="300" />
