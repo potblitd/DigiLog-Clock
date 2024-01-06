@@ -35,7 +35,7 @@ First of all, to hide out-sticking pointers, the surrounding space outside the d
 </p>
 
 ### Sequence
-With the code name for each digit representation, the transition movements between them can are written down. Sometimes, not all the rotating elements can perform the necessary movements simultaneously due to possible collisions of two pointers. In this case, the rotations are executed consecutively in the shortest possible timeframe. To better understand the rotations of each individual pointer and their respective timings, a sequence diagram is sketched.
+With the code name for each digit representation, the transition movements between them can are written down. Sometimes, not all the rotating elements can perform the necessary movements simultaneously due to possible collisions of two pointers. In this case, the rotations are executed consecutively in the shortest possible timeframe. To better understand the rotations of each individual element and the timings, a sequence diagram is sketched.
 
 <p align="center">
   <img src="images/transitions.svg" width="1000" /> <br/><br/>
