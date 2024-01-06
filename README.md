@@ -91,7 +91,7 @@ The mechanical parts for the assembly were designed in [Tinkercad](https://www.t
 </p>
 
 ### PCB
-The size of the PCB is the same as the assembly outline so it can be fixed to the mounting plate with M3 standoffs through the mounting holes in the corners. All the components are installed on the top layer of the board. It is also possible to solder the switch, button and LEDs on the bottom layer for a different mounting configuration. D1 mini, DS3231 RTC and PCA9685 PWM Driver are simply plugged into their corresponding female pin headers so that the breakout modules can be removed or inserted easily.
+The PCB has the same size as the assembly outline so it can be fixed to the mounting plates with M3 standoffs. All the components are installed on the top layer of the board. It is also possible to solder the switch, button and LEDs on the bottom layer for a different mounting configuration. Modules D1 mini, DS3231 RTC and PCA9685 PWM driver are simply plugged into their corresponding female pin headers so that they can be removed or inserted easily.
 
 <p align="center">
   <img src="images/PCB-back.JPG" height="200" />
