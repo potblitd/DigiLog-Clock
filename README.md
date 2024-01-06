@@ -82,11 +82,11 @@ For this project, the prototype assembly incorporates 8 servos allowing the comp
 The mechanical parts for the assembly were designed in [Tinkercad](https://www.tinkercad.com/). One plate is used to precisely mount the 8 servo motors and another plate as the front cover. Both plates can be held together by fixing M3 screws in the corners. For the design of the rotating elements, the left pointers had to be higher than the right ones because they overlap with each other in the space between the digit displays.
 
 <p align="center">
-  <img src="images/mounting-plate.png" height="200" />
-  <img src="images/front-plate.png" height="200" />
-  <img src="images/pointers-topside.png" height="200" />
+  <img src="images/mounting-plate.png" height="150" />
+  <img src="images/front-plate.png" height="150" />
+  <img src="images/pointers-topside.png" height="150" />
   <!-- <img src="images/assembly.png" height="200" /> -->
-  <img src="images/assembly-side.png" height="200" />
+  <img src="images/assembly-side.png" height="150" />
   <!-- <img src="images/assembly-front.png" height="200" /> -->
 </p>
 
