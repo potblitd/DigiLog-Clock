@@ -38,9 +38,9 @@ First of all, to hide out-sticking pointers, the surrounding space outside the d
 With the code name for each digit representation, the transition movements between them can are written down. For a conventional clock, transitions for counting up and displaying digit 0 from any number and to any number from 0 must be considered. Sometimes, not all the rotating elements can perform the necessary movements simultaneously due to possible collisions of two pointers. In this case, the rotations are executed consecutively in the shortest possible timeframe. 
 
 <p align="center">
-  <img src="images/init.svg" height="500" />
+  <img src="images/init.svg" height="400" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="images/clock_animation.gif" height="300" />
+  <img src="images/clock_animation.gif" height="400" />
 </p>
 
 ## Implementation
