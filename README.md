@@ -16,7 +16,7 @@ The main goal is to first design an interface with the fewest single-shaft rotat
 + Driven by servo motors, the rotating elements have a maximum of **180 degrees range**
 
 <p align="center"> 
-  <! -- <img src="images/DigiLog-design.svg" width="300" /> -->
+  <! -- <img src="images/DigiLog-design.svg" width="300" />
 </p>
 
 ### Design
