@@ -35,17 +35,15 @@ First of all, to hide out-sticking pointers, the surrounding space outside the d
 </p>
 
 ### Sequence
-With the code name for each digit representation, the transition movements between them can are written down. Sometimes, not all the rotating elements can perform the necessary movements simultaneously due to possible collisions of two pointers. In this case, the rotations are executed consecutively in the shortest possible timeframe. To better understand the rotations of each individual element and the timings, a sequence diagram is sketched.
+With the code name for each digit representation, the transition movements between them can are written down. For a conventional clock, transitions for counting up and displaying digit 0 from any number and to any number from 0 must be considered. Sometimes, not all the rotating elements can perform the necessary movements simultaneously due to possible collisions of two pointers. In this case, the rotations are executed consecutively in the shortest possible timeframe. 
 
 <p align="center">
   <img src="images/transitions.svg" width="1000" /> <br/><br/>
-  <img src="images/timing.svg" width="1000" />
+  <!-- <img src="images/timing.svg" width="1000" /> -->
+  <img src="images/init.svg" height="400" />
 </p>
 
-The last step of the sequence part is to make sure that the pointers can display the initial digit 0 from anywhere in the sequence and then go to any digit from there. Here again, some transitions have to be completed with shifted movements to avoid collisions between pointers. Finally, a visual animation is created to get a better understanding of the clock rotations sequence. 
-
 <p align="center">
-  <img src="images/init.svg" height="400" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="images/clock_animation.gif" height="400" />
 </p>
