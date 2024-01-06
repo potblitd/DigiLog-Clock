@@ -15,9 +15,9 @@ The main goal is to first design an interface with the fewest single-shaft rotat
 + Located on the same physical plane, the pointers can **not collide or overlap** with each other
 + Driven by servo motors, the rotating elements have a maximum of **180 degrees range**
 
-<! -- <p align="center">
-  <img src="images/DigiLog-design.svg" width="300" />
-</p> -->
+<p align="center"> 
+  <! -- <img src="images/DigiLog-design.svg" width="300" /> -->
+</p>
 
 ### Design
 First of all, to hide out-sticking pointers, the surrounding space outside the digit display will be covered. As the digital clock is displayed by rotating pointers, it is clear that one end of each segment should be attached to an axis. In this way, there can be a maximum of 6 spinning elements. This number can be reduced down to 3 by eliminating the common intersections. Now, such an arrangement would be attractive but unfortunately, it would require a full revolution range and almost always separate turns to compose all the digits. Adding one more rotation point, i.e. 4 altogether, this arrangement needs to be verified to satisfy the design considerations set previously by defining the pointers rotation range.
