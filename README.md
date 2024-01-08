@@ -31,7 +31,7 @@ First of all, to hide out-sticking pointers, the surrounding space outside the d
 
 <p align="center">
   <img src="images/positions.svg" width="600" /> <br/><br/>
-  <img src="images/digits.svg" width="600" />
+  <img src="images/digits.svg" width=100% />
 </p>
 
 ### Sequence
