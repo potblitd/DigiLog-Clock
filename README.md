@@ -11,7 +11,7 @@ There a quite a few articles about electronic projects using a grid arrangement 
 
 ### Idea
 The main goal is to first design an interface with the fewest single-shaft rotating axes to properly display all 7-segment digits and then, to elaborate the most effective rotations sequence to create a counter. Before getting into the design part of the display, a few considerations need to be set based on the future electronic implementation part of this project.
-+ For cost saving and program simplification reasons, each axis will have **one rotating element**
++ For cost saving and program simplification, each axis will have **one rotating element**
 + Located on the same physical plane, the pointers can **not collide or overlap** with each other
 + Driven by servo motors, the rotating elements have a maximum of **180 degrees range**
 <!--
