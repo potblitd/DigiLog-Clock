@@ -66,7 +66,7 @@ The servo motors consuming lots of current, their voltage is provided through a 
 The D1 mini microcontroller communicates with both the PWM driver and the real-time clock through an I2C interface. Four push buttons, used for start & stop, reset and setting the time, are connected to the GPIO pins D5, D6 and D7 which are pulled high internally, and D8 which is pulled low on the ESP8266 module board. If more than 16 servo motors are used in a setup, another PCA9685 driver can be connected via the additional pin headers P1 or P2. 
 
 <p align="center">
-  <img src="images/schematics.png" width="600" />
+  <img src="images/schematics.png" width="500" />
 </p>
 
 ### PCB
@@ -83,7 +83,7 @@ In the [Concept](#concept) section, the arrangement of the rotating axes has alr
 For this project, the prototype assembly incorporates 8 servos allowing the composition of 2 digits. The outline dimensions are chosen so that the rotating pointers should never exceed the border. Both displays are placed 20 mm apart to avoid interfering each other. This results in an outline size of 100 mm by 80 mm. To hide the pointers turning outside of the digit display, a front plate is placed on top.
 
 <p align="center">
-  <img src="images/servo-arragement.svg" height="200" />
+  <img src="images/servo-arragement.svg" height="250" />
 </p>
 
 ### Mechanical parts
