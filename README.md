@@ -120,7 +120,7 @@ In the Arduino program, the positions for each rotating element is configured so
 </p>
 
 ### Cost
-All parts were cheaply bought on Taobao with negligible delivery as most items have free shipping and/or the charges vary depending on the delivery address. Unit prices for LEDs, capacitor, resistors and pin headers were approximated. The mechanical parts were quite expensive but are very good quality. The total price sums up to 322.71 RMB (45.45 USD).
+Electronic parts, i.e. PCB, modules, components to solder and servo motors costed about 80 RMB. The 3D printed mechanical parts with mounting screws and standoffs were 285 RMB altogether which gives a total price of 365 RMB (51.39 USD).
 
 ### Future improvements
 The prototype assembly accomplishes its proof-of-concept perfectly fine, the servo transitions are fast and precise enough to beautifully display digits without collisions between pointers. However, there a few improvements to note for the code or for a future version.
@@ -129,3 +129,4 @@ The prototype assembly accomplishes its proof-of-concept perfectly fine, the ser
 + Reading the digits requires a direct line of sight on the assembly because the front plate can hide the pointers when observing the clock from an angle. This can easily be corrected by mounting the front plate as close as possible to the pointers.
 + The four buttons on the back of the PCB could be implemented to add other features such as manual time setting, stopwatch, button-press counter or days/hours down-counter.
 + With the on-board ESP8266 WiFi chip, the clock could display live number fetched from the internet or from another device, such as a weather station.
++ Use laser cutting for the fabrication of the mechanical parts to reduce costs and get better accuracy.
