@@ -28,7 +28,7 @@ The servo motors are driver by the PCA9685 PWM controller used previously and th
 + 4 x SG90 servo motor
 
 ### Schematics
-The system is powered through a USB-C port (min 2W) and its status is indicated by a blue LED. The RTC chip does not have an auxilliary power source so the time must be re-set in case the USB cable is unplugged. To potentially attach another 2 or more digits, the power rail, ground and I2C signals are broken out through a 2.54mm header so that the additional PCBs only need the PWM controller circuit. The communication with multiple PCA9685 chips is then feasible by setting different adresses through the DIP switch. Finally, no USB programming has been implemented for this design due to space constraint. To flash the ATtiny MCU, an IC test clip is needed in combination with a general TTL serial adapter.
+The system is powered through a USB-C port (min 2W) and its status is indicated by a blue LED. The RTC chip does not have an auxilliary power source so the time must be re-set in case the USB cable is unplugged. To potentially attach another 2 or more digits, the power rail, ground and I2C signals are broken out through a 2.54mm header so that the additional PCBs only need the PWM controller circuit. The communication with multiple PCA9685 chips is then feasible by setting different adresses through the DIP switch. Finally, no USB programming has been integrated for this design due to space constraint. To flash the ATtiny MCU, an IC test clip is needed in combination with a general TTL serial adapter.
 
 <p align="center">
   <img src="images/schematics.png" width="800" />
