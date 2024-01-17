@@ -9,7 +9,7 @@ This updated version of the DigiLog clock called 'DigiDisk' is meant to improve 
 + Fully assembled PCB (no modules)
 
 ### Design
-Having overlapping disks with marked pointers instead of bar elements involved changing the axis position and pointers arrangement, and set the disk layer order to draw all 10 digits. With the code names, each digit can be defined by its disks positions. Since the rotating elements are overlapping each other, there is no need to plan the sequence diagram as done for the first version. 
+Having overlapping disks with marked pointers instead of bar elements involved changing the axes position and pointers arrangement, and set the disk layer order to draw all 10 digits. With the code names, each digit can be defined by its disks positions. Since the rotating elements are overlapping each other, there is no need to plan the sequence diagram as done for the first version. 
 
 <p align="center">
   <img src="images/positions.svg" width="500" /> <br/><br/>
@@ -34,21 +34,33 @@ The system is powered through a USB-C port (min 2W) and its status is indicated 
   <img src="images/schematics.png" width="800" />
 </p>
 
-### PCB
-
 ### Display
-
+With the axes position slightly changed from the previous version, the servo also needed to be adjusted but the idea remains the same. In this configuration, two digits must be separated by at least 20mm.
 
 <p align="center">
   <img src="images/servo-arragement.svg" height="250" />
 </p>
 
+### PCB
+The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. However, this layout greatly limits the space for more PWM signal breakouts or components for USB programming. 
+
+<p align="center">
+  <img src="images/pcb-front" height="250" />
+  <img src="images/pcb-back" height="250" />
+  <img src="images/pcb-mounted" height="250" />
+  <img src="images/pcb-assembly" height="250" />
+</p>
+
 ### Mechanical parts
-
-
+Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The simplest way here is to use paper, as its thickness is negligeable, elimitating the need to install spacers for the disk layers heights. 
 
 
 ### Assembly
+
+<p align="center">
+  <img src="images/assembly-front.png" height="250" />
+  <img src="images/assembly-back.png" height="250" />
+</p>
 
 ### Code
 As mentioned before, the design does not feature an internal programmer and thus, a modified TTL serial adapter must be connected to the ATtiny402 to programm it with the [python UPDI driver](https://github.com/mraardvark/pyupdi).
