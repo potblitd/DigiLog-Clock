@@ -52,7 +52,7 @@ The board not only integrates all the electronic components, but also includes t
 </p>
 
 ### Mechanical parts
-Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The simplest way here is to use paper, as its thickness is negligeable, elimitating the need to install spacers for the disk layers heights. 
+Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The simplest way here is to use paper, as its thickness is negligeable, elimitating the need to install spacers for the different disk layers heights. 
 
 
 ### Assembly
