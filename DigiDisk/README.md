@@ -9,7 +9,7 @@ This updated version of the DigiLog clock called 'DigiDisk' is meant to improve 
 + Fully assembled PCB (no modules)
 
 ### Design
-Having overlapping disks with marked pointers instead of bar elements involved changing the axis position and pointers arrangement, and set the disk layer order to draw all 10 digits. With the code names, each digit can be defined by its disks positions. 
+Having overlapping disks with marked pointers instead of bar elements involved changing the axis position and pointers arrangement, and set the disk layer order to draw all 10 digits. With the code names, each digit can be defined by its disks positions. Since the rotating elements are overlapping each other, there is no need to plan the sequence diagram as done for the first version. 
 
 <p align="center">
   <img src="images/positions.svg" width="600" /> <br/><br/>
