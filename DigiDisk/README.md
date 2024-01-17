@@ -20,6 +20,7 @@ Having overlapping disks with marked pointers instead of bar elements involved c
 
 ## Implementation
 ### Components
+The servo motors are driver by the PCA9685 PWM controller used previously and the time is fetched from the common PCF8563 real-time clock. As the microcontroller of the system only needs to write and read with the two other chips through I2C, the ATtiny402 is very suitable (and my fav). 
 
 + ATtiny402 microcontroller
 + PCF8563 real-time clock
