@@ -1,8 +1,12 @@
 ### Idea
+This updated version of the DigiLog clock called 'DigiDisk' is meant to improve the previous design but also change a few aspects to meet the following requirements :
 
 + Use cheap and easily available components
 + Simple setup with as little parts as possible
 + Modular to add more 2-digit assemblies
++ Use overlapping disks to avoid collision of sharp edges and accelerate digit transitions
++ Ditch the WiFi, embrace minimal MCUs
++ Fully assembled PCB (no modules)
 
 ### Design
 
