@@ -67,6 +67,7 @@ As mentioned before, the design does not feature an internal programmer and thus
 
 
 ### Cost
+The PCB with all the components costed about 28 RMB (3.93 USD) and with the servo motors it is 66.28 RMB (9.30 USD). Since the disks and front plate were made out of paper, the final price with the mounting screws and nuts is around 70 RMB (9.82 USD).
 
 
 
