@@ -13,7 +13,7 @@ Having overlapping disks with marked pointers instead of bar elements involved c
 
 <p align="center">
   <img src="images/positions.svg" width="600" /> <br/><br/>
-  <img src="images/digits.svg" width="600" />
+  <img src="images/digits.svg" width="800" />
 </p>
 
 ## Implementation
