@@ -13,8 +13,9 @@ Having overlapping disks with marked pointers instead of bar elements involved c
 
 <p align="center">
   <img src="images/positions.svg" width="600" /> <br/><br/>
-  <img src="images/digits.svg" width="800" />
-  <img src="images/digidisk-animation.gif" width="200" />
+  <img align="middle" src="images/digits.svg" width="800" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img align="middle" src="images/digidisk-animation.gif" width="200" />
 </p>
 
 ## Implementation
