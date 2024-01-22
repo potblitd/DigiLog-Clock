@@ -128,8 +128,15 @@ void loop() {
   digit_disp2_hour = floor(hour/10);
   
   // show digits
+//  pwm.setChannelPWM(0, p0);
+//  delay(300);
+//  pwm.setChannelPWM(0, p90);
+//  delay(300);
+//  pwm.setChannelPWM(0, p180);
+//  delay(300);
+//  pwm.setChannelPWM(0, p90);
   set_digit(digit_disp1_minute,1);
  
   // check time every second
-  delay(1000);
+  delay(300);
 }
