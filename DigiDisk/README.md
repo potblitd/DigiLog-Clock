@@ -1,15 +1,16 @@
 ### Idea
-This updated version of the DigiLog clock called 'DigiDisk' is meant to improve the previous design but also change a few aspects to meet the following requirements :
+This updated version of the DigiLog clock, called 'DigiDisk', is meant to improve the previous design but also change a few aspects to meet the following requirements :
 
 + Use cheap and easily available components
 + Simple setup with as little parts as possible
-+ Modular to add more 2-digit assemblies
++ Full clock, meaning at least 4 digits
 + Use overlapping disks to avoid collision of sharp edges and accelerate digit transitions
 + Ditch the WiFi, embrace minimal MCUs
 + Fully assembled PCB (no modules)
++ Finish version, no more ugly prototypes
 
 ### Design
-Having overlapping disks with marked pointers instead of bar elements involved changing the 4 axes positions and pointers arrangement, and set the disk layer order to draw all 10 digits. With the code names, each digit can be defined by its disks positions. Since the rotating elements are overlapping each other, there is no need to plan the sequence diagram as done for the first version. 
+Having overlapping disks with marked pointers instead of bar elements involved changing the 4 axes positions and pointers arrangement, and set the disk layer order to draw all 10 digits. With the code names, each digit can be defined by its disks positions. Since the rotating elements are overlapping each other, there is no need to plan the sequence diagram as done for the first version. This significantly simplifies the coding parts later on.
 
 <p align="center">
   <img src="images/positions.svg" width="500" /> <br/><br/>
@@ -20,15 +21,16 @@ Having overlapping disks with marked pointers instead of bar elements involved c
 
 ## Implementation
 ### Components
-The servo motors are driver by the PCA9685 PWM controller used previously and the time is fetched from the common PCF8563 real-time clock. As the microcontroller of the system only needs to write and read with the two other chips through I2C, the ATtiny402 is very suitable (and my fav). 
+The servo motors are driver by the PCA9685 PWM controller used previously and the time is fetched from the common PCF8563 real-time clock. As the microcontroller of the system only needs to write and read with the two other chips through I2C, the ATtiny402 is very suitable (and my fav). The servo motors have been upgraded to the MG90S as they are less noisy and their motion is more smooth and precise without a dramatic price increase.
 
 + ATtiny402 microcontroller
++ CH340C
 + PCF8563 real-time clock
 + PCA9685 PWM driver
-+ 4 x MG90S servo motor
++ 16 x MG90S servo motor
 
 ### Schematics
-The system is powered through a USB-C port (min 2W) and its status is indicated by a blue LED. The RTC chip does not have an auxilliary power source so the time must be re-set in case the USB cable is unplugged. To potentially attach another 2 or more digits, the power rail, ground and I2C signals are broken out through a 2.54mm header so that the additional PCBs only need the PWM controller circuit. The communication with multiple PCA9685 chips is then feasible by setting different adresses through the DIP switch. Here, no USB programming has been integrated for this design due to space constraint. To flash the ATtiny MCU, an IC test clip is needed in combination with a general TTL serial adapter. The servo motors have been upgraded to the MG90S as their motion is more smooth and precise without a dramatic price increase.
+The system is powered through a USB-C port (on a breakout board) and its status is indicated by a blue LED. For the 16 servo motors, the power supply must be able to provide at least 18W. Programming the ATtiny402 is done through the CH340C chip with the 4.7K resistor between RX and TX to allow UPDI. Somehow, this setup works even without the pull-down resistors on the CC signals, which reduces components and extra connections. The RTC chip has a CR1220 coin cell as an auxilliary power source to keep the time running while unplugged from the USB-C connector. As only one PCA9685 driver is required, its i2C address is hardwired to the default value. 
 
 <p align="center">
   <img src="images/schematics.png" width="800" />
@@ -42,7 +44,7 @@ With the axes position slightly changed from the previous version, the servo als
 </p>
 
 ### PCB
-The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. However, this layout greatly limits the space for more PWM signal breakouts or components for USB programming. 
+The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. Here, multiple nuts are placed on a long screw to hold the servo in position against the PCB.
 
 <p align="center">
   <img src="images/pcb-front" height="250" />
@@ -52,8 +54,7 @@ The board not only integrates all the electronic components, but also includes t
 </p>
 
 ### Mechanical parts
-Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The simplest way here is to use paper, as its thickness is negligeable, elimitating the need to install spacers for the different disk layers heights. 
-
+Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The disks are actually empty PCBs with silkscreen pointers as the thickness and material is very suitable. For the front plate, the necessary shapes were cut out from a 1mm PVC board.
 
 ### Assembly
 
@@ -63,11 +64,11 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 </p>
 
 ### Code
-As mentioned before, the design does not feature an internal programmer and thus, a modified TTL serial adapter must be connected to the ATtiny402 to programm it with the [python UPDI driver](https://github.com/mraardvark/pyupdi).
+
 
 
 ### Cost
-The PCB with all the components costed about 28 RMB (3.93 USD) and with the servo motors it is 66.28 RMB (9.30 USD). Since the disks and front plate were made out of paper, the final price with the mounting screws and nuts is around 70 RMB (9.82 USD).
+The PCB with all the components costs 59.79 RMB (8.40 USD) and with the 16 servo motors it's 136.27 RMB (19.15 USD). The PCB disks, front plate and all kinds of mounting components come up to 106.31 RMB (14.94 USD). So, the total expenses for this clock are 242.59 RMB (34.09 USD). Since the most expensive items are the PCBs, buying larger quantities would decrease the unit price a lot.
 
 
 
