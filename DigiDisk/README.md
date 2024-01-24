@@ -49,7 +49,6 @@ The board not only integrates all the electronic components, but also includes t
 <p align="center">
   <img src="images/pcb-front.JPG" width="800" />
   <img src="images/pcb-mounted.JPG" width="800" />
-  <img src="images/pcb-assembly" height="250" />
 </p>
 
 ### Mechanical parts
