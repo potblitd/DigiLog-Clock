@@ -47,8 +47,7 @@ With the axes position slightly changed from the previous version, the servo als
 The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. Here, multiple nuts are placed on a long screw to hold the servo in position against the PCB.
 
 <p align="center">
-  <img src="images/pcb-front" height="250" />
-  <img src="images/pcb-back" height="250" />
+  <img src="images/pcb-front.JPG" height="250" />
   <img src="images/pcb-mounted" height="250" />
   <img src="images/pcb-assembly" height="250" />
 </p>
