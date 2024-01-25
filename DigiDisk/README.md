@@ -49,7 +49,6 @@ The board not only integrates all the electronic components, but also includes t
 <p align="center">
   <img src="images/pcb-front.JPG" width="800" />
   <img src="images/pcb-mounted.JPG" width="800" />
-  <img src="images/pcb-assembly" height="250" />
 </p>
 
 ### Mechanical parts
@@ -67,7 +66,7 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 
 
 ### Cost
-The PCB with all the components costs 59.79 RMB (8.40 USD) and with the 16 servo motors it's 136.27 RMB (19.15 USD). The PCB disks, front plate and all kinds of mounting components come up to 106.31 RMB (14.94 USD). So, the total expenses for this clock are 242.59 RMB (34.09 USD). Since the most expensive items are the PCBs, buying larger quantities would decrease the unit price a lot.
+The PCB with all the components costs 59.79 RMB (8.40 USD) and with the 16 servo motors it's 136.27 RMB (19.15 USD). The PCB disks, front plate and all kinds of mounting components come up to 163.79 RMB (23.10 USD). So, the total expenses for this clock are 300.06 RMB (42.32 USD). Since the most expensive items are the PCBs, buying larger quantities would decrease the unit price a lot.
 
 
 
