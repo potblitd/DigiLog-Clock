@@ -22,7 +22,7 @@ Having overlapping disks with marked pointers instead of bar elements involved c
 
 ## Implementation
 ### Components
-The servo motors are driver by the PCA9685 PWM controller used previously and the time is fetched from the common PCF8563 real-time clock. As the microcontroller of the system only needs to write and read with the two other chips through I2C, the ATtiny402 is very suitable (and my fav). The servo motors have been upgraded to the MG90S as they are less noisy and their motion is more smooth and precise without a dramatic price increase. For programming the ATtiny over USB, the CH340C is added as it has a simple footprint (SOP-16) and doesn not require an external oscillator. 
+The servo motors are driver by the PCA9685 PWM controller used previously and the time is fetched from the common PCF8563 real-time clock. As the microcontroller of the system only needs to write and read with the two other chips through I2C, the ATtiny402 is very suitable (and my fav). The servo motors have been upgraded to the MG90S as they are less noisy and their motion is more smooth and precise without a dramatic price increase. For programming the ATtiny over USB, the CH340C is added as it has a simple footprint (SOP-16) and does not require an external oscillator. 
 
 + ATtiny402 microcontroller
 + CH340C USB to serial
@@ -31,7 +31,7 @@ The servo motors are driver by the PCA9685 PWM controller used previously and th
 + 16 x MG90S servo motor
 
 ### Schematics
-The system is powered through a USB-C port (on a breakout board) and its status is indicated by a blue LED. For the 16 servo motors, the power supply must be able to provide at least 18W. Programming the ATtiny402 is accomplished through the CH340C chip with the schottky diode resistor between RX and TX to allow UPDI. Somehow, this setup works even without the pull-down resistors on the CC signals, which reduces components and extra connections. The RTC chip has a CR1220 coin cell as an auxilliary power source to keep the time running while unplugged from the USB-C connector. As only one PCA9685 driver is required, its i2C address is hardwired to the default value. 
+The system is powered through a USB-C port (on a breakout board) and its status is indicated by a blue LED. For the 16 servo motors, the power supply must be able to provide at least 18W. Programming the ATtiny402 is accomplished through the CH340C chip with the schottky diode between RX and TX to allow UPDI. Somehow, this setup works even without the pull-down resistors on the CC signals, which reduces components and extra connections. The RTC chip has a CR1220 coin cell as an auxilliary power source to keep the time running while unplugged from the USB-C connector. As only one PCA9685 driver is required, its i2C address is hardwired to the default value. 
 
 <p align="center">
   <img src="images/schematics.png" width="800" />
@@ -53,7 +53,7 @@ The board not only integrates all the electronic components, but also includes t
 </p>
 
 ### Mechanical parts
-Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The disks are actually empty PCBs with silkscreen pointers as the thickness and material is very suitable. For the front plate, a 1.5mm wood board was cut and painted black.
+Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The disks are actually made from thin PCBs with silkscreen pointers as the thickness and material is very suitable. For the front plate, a 1.5mm wood board was cut and painted black.
 
 ### Assembly
 
