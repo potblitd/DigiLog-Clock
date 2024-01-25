@@ -18,9 +18,9 @@ void setup() {
   // setup rtc
   rtc.initClock();
   //day, weekday, month, century, year
-  rtc.setDate(20, 6, 1, 20, 24);
+  rtc.setDate(24, 3, 1, 20, 24);
   //hr, min, sec
-  rtc.setTime(11, 00, 0);
+  rtc.setTime(9, 9, 0);
 
 }
 
