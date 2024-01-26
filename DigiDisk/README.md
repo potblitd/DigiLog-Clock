@@ -20,7 +20,6 @@ Having overlapping disks with marked pointers instead of bar elements involved c
   <img align="middle" src="images/digidisk-animation.gif" width="200" />
 </p>
 
-## Implementation
 ### Components
 The servo motors are driver by the PCA9685 PWM controller used previously and the time is fetched from the common PCF8563 real-time clock. As the microcontroller of the system only needs to write and read with the two other chips through I2C, the ATtiny402 is very suitable (and my fav). The servo motors have been upgraded to the MG90S as they are less noisy and their motion is more smooth and precise without a dramatic price increase. For programming the ATtiny over USB, the CH340C is added as it has a simple footprint (SOP-16) and does not require an external oscillator. 
 
