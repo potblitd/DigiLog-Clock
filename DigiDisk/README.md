@@ -54,6 +54,11 @@ The board not only integrates all the electronic components, but also includes t
 ### Mechanical parts
 Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The disks are actually made from thin PCBs with silkscreen pointers as the thickness and material is very suitable. For the front plate, a 1.5mm wood board was cut and painted black.
 
+<p align="center">
+  <img src="images/parts.JPG" width="800" />
+</p>
+
+
 ### Assembly
 
 <p align="center">
