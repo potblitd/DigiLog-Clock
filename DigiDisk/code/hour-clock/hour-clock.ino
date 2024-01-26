@@ -19,8 +19,8 @@ const int p90 = 310;
 const int p180 = 525;
 
 // digit function
-void set_digit(byte digNum, byte disp){
-  switch(digNum){
+void set_digit(byte digit, byte disp){
+  switch(digit){
     case 0:
       pwm.setChannelPWM(0+4*(disp-1), p90);
       pwm.setChannelPWM(1+4*(disp-1), p0);
@@ -113,13 +113,11 @@ void loop() {
   // get time
   hour = rtc.getHour();
   minute = rtc.getMinute();
-  // extract digits
-  digit_disp1_minute = minute%10;
-  digit_disp2_minute = floor(minute/10);
-  digit_disp1_hour = hour%10;
-  digit_disp2_hour = floor(hour/10);
   // show digits
-  //set_digit(digit_disp1_minute,1);
+  //set_digit(minute%10,1);
+  //set_digit(floor(minute/10),2);
+  //set_digit(hour%10,3);
+  //set_digit(floor(hour/10),4);
 
   for (int i = 0; i <= 9; i++) {
     set_digit(i,1);
