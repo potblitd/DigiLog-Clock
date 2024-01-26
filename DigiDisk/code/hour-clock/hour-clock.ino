@@ -1,19 +1,11 @@
-
-/*
-DigiDisk Clock Code
-Microcontroller ATtiny402
-Make sure to have the CH340 driver installed
-*/
-
 // include librairies
 #include "PCA9685.h"
-
 #include <Rtc_Pcf8563.h>
 #include <Wire.h>
 
 // init driver 
 PCA9685 pwm;
-// init rtc
+// init rtc and varibales
 Rtc_Pcf8563 rtc;
 byte hour;
 byte minute;
@@ -26,84 +18,84 @@ const int p0 = 105;
 const int p90 = 310;
 const int p180 = 525;
 
-// FUNCTION
-void set_digit(byte digNum,byte dispNum){
+// digit function
+void set_digit(byte digNum, byte disp){
   switch(digNum){
     case 0:
-      pwm.setChannelPWM(0+4*(dispNum-1), p90);
-      pwm.setChannelPWM(1+4*(dispNum-1), p0);
-      pwm.setChannelPWM(2+4*(dispNum-1), p180);
-      pwm.setChannelPWM(3+4*(dispNum-1), p180);
+      pwm.setChannelPWM(0+4*(disp-1), p90);
+      pwm.setChannelPWM(1+4*(disp-1), p0);
+      pwm.setChannelPWM(2+4*(disp-1), p180);
+      pwm.setChannelPWM(3+4*(disp-1), p180);
       delay(1000);
       break;
     case 1:
-      pwm.setChannelPWM(0+4*(dispNum-1), p180);
-      pwm.setChannelPWM(1+4*(dispNum-1), p90);
-      pwm.setChannelPWM(2+4*(dispNum-1), p180);
-      pwm.setChannelPWM(3+4*(dispNum-1), p0);
+      pwm.setChannelPWM(0+4*(disp-1), p180);
+      pwm.setChannelPWM(1+4*(disp-1), p90);
+      pwm.setChannelPWM(2+4*(disp-1), p180);
+      pwm.setChannelPWM(3+4*(disp-1), p0);
       delay(1000);
       break;
     case 2:
-      pwm.setChannelPWM(0+4*(dispNum-1), p90);
-      pwm.setChannelPWM(1+4*(dispNum-1), p90);
-      pwm.setChannelPWM(2+4*(dispNum-1), p0);
-      pwm.setChannelPWM(3+4*(dispNum-1), p180);
+      pwm.setChannelPWM(0+4*(disp-1), p90);
+      pwm.setChannelPWM(1+4*(disp-1), p90);
+      pwm.setChannelPWM(2+4*(disp-1), p0);
+      pwm.setChannelPWM(3+4*(disp-1), p180);
       delay(1000);
       break;
     case 3:
-      pwm.setChannelPWM(0+4*(dispNum-1), p90);
-      pwm.setChannelPWM(1+4*(dispNum-1), p90);
-      pwm.setChannelPWM(2+4*(dispNum-1), p90);
-      pwm.setChannelPWM(3+4*(dispNum-1), p90);
+      pwm.setChannelPWM(0+4*(disp-1), p90);
+      pwm.setChannelPWM(1+4*(disp-1), p90);
+      pwm.setChannelPWM(2+4*(disp-1), p90);
+      pwm.setChannelPWM(3+4*(disp-1), p90);
       delay(1000);
       break;
     case 4:
-      pwm.setChannelPWM(0+4*(dispNum-1), p180);
-      pwm.setChannelPWM(1+4*(dispNum-1), p0);
-      pwm.setChannelPWM(2+4*(dispNum-1), p90);
-      pwm.setChannelPWM(3+4*(dispNum-1), p0);
+      pwm.setChannelPWM(0+4*(disp-1), p180);
+      pwm.setChannelPWM(1+4*(disp-1), p0);
+      pwm.setChannelPWM(2+4*(disp-1), p90);
+      pwm.setChannelPWM(3+4*(disp-1), p0);
       delay(1000);
       break;
     case 5:
-      pwm.setChannelPWM(0+4*(dispNum-1), p0);
-      pwm.setChannelPWM(1+4*(dispNum-1), p0);
-      pwm.setChannelPWM(2+4*(dispNum-1), p90);
-      pwm.setChannelPWM(3+4*(dispNum-1), p90);
+      pwm.setChannelPWM(0+4*(disp-1), p0);
+      pwm.setChannelPWM(1+4*(disp-1), p0);
+      pwm.setChannelPWM(2+4*(disp-1), p90);
+      pwm.setChannelPWM(3+4*(disp-1), p90);
       delay(1000);
       break;
     case 6:
-      pwm.setChannelPWM(0+4*(dispNum-1), p0);
-      pwm.setChannelPWM(1+4*(dispNum-1), p0);
-      pwm.setChannelPWM(2+4*(dispNum-1), p90);
-      pwm.setChannelPWM(3+4*(dispNum-1), p180);
+      pwm.setChannelPWM(0+4*(disp-1), p0);
+      pwm.setChannelPWM(1+4*(disp-1), p0);
+      pwm.setChannelPWM(2+4*(disp-1), p90);
+      pwm.setChannelPWM(3+4*(disp-1), p180);
       delay(1000);
       break;
     case 7:
-      pwm.setChannelPWM(0+4*(dispNum-1), p90);
-      pwm.setChannelPWM(1+4*(dispNum-1), p90);
-      pwm.setChannelPWM(2+4*(dispNum-1), p180);
-      pwm.setChannelPWM(3+4*(dispNum-1), p0);
+      pwm.setChannelPWM(0+4*(disp-1), p90);
+      pwm.setChannelPWM(1+4*(disp-1), p90);
+      pwm.setChannelPWM(2+4*(disp-1), p180);
+      pwm.setChannelPWM(3+4*(disp-1), p0);
       delay(1000);
       break;
     case 8:
-      pwm.setChannelPWM(0+4*(dispNum-1), p90);
-      pwm.setChannelPWM(1+4*(dispNum-1), p0);
-      pwm.setChannelPWM(2+4*(dispNum-1), p90);
-      pwm.setChannelPWM(3+4*(dispNum-1), p180);
+      pwm.setChannelPWM(0+4*(disp-1), p90);
+      pwm.setChannelPWM(1+4*(disp-1), p0);
+      pwm.setChannelPWM(2+4*(disp-1), p90);
+      pwm.setChannelPWM(3+4*(disp-1), p180);
       delay(1000);
       break;
     case 9:
-      pwm.setChannelPWM(0+4*(dispNum-1), p90);
-      pwm.setChannelPWM(1+4*(dispNum-1), p0);
-      pwm.setChannelPWM(2+4*(dispNum-1), p90);
-      pwm.setChannelPWM(3+4*(dispNum-1), p90);
+      pwm.setChannelPWM(0+4*(disp-1), p90);
+      pwm.setChannelPWM(1+4*(disp-1), p0);
+      pwm.setChannelPWM(2+4*(disp-1), p90);
+      pwm.setChannelPWM(3+4*(disp-1), p90);
       delay(1000);
       break;
   }
 }
 
 void setup() {
-  // setup Attiny402
+  // setup i2c
   Wire.begin();
   // setup driver
   pwm.resetDevices();
@@ -126,15 +118,12 @@ void loop() {
   digit_disp2_minute = floor(minute/10);
   digit_disp1_hour = hour%10;
   digit_disp2_hour = floor(hour/10);
-  
   // show digits
   //set_digit(digit_disp1_minute,1);
- 
-  // check time every second
+
   for (int i = 0; i <= 9; i++) {
     set_digit(i,1);
     delay(1000);
   }
   
-  delay(1000);
 }
