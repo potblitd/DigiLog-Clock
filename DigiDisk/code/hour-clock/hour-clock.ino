@@ -9,10 +9,6 @@ PCA9685 pwm;
 Rtc_Pcf8563 rtc;
 byte hour;
 byte minute;
-byte digit_disp1_hour;
-byte digit_disp2_hour;
-byte digit_disp1_minute;
-byte digit_disp2_minute;
 // init servo positions
 const int p0 = 105;
 const int p90 = 310;
@@ -114,14 +110,9 @@ void loop() {
   hour = rtc.getHour();
   minute = rtc.getMinute();
   // show digits
-  //set_digit(minute%10,1);
-  //set_digit(floor(minute/10),2);
-  //set_digit(hour%10,3);
-  //set_digit(floor(hour/10),4);
-
-  for (int i = 0; i <= 9; i++) {
-    set_digit(i,1);
-    delay(1000);
-  }
+  set_digit(minute%10,1);
+  set_digit(floor(minute/10),2);
+  set_digit(hour%10,3);
+  set_digit(floor(hour/10),4);
   
 }
