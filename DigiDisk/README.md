@@ -74,7 +74,7 @@ The code, written in Arduino, uses librairies [PCA9685](https://github.com/Nacht
 The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo motors it's 127.31 RMB (17.94 USD). The PCB disks, front plate and all kinds of mounting components come up to 137.62 RMB (19.39 USD). So, the total expenses for this clock are 264.93 RMB (37.33 USD). Since the most expensive items are the PCBs, buying larger quantities would decrease the unit price a lot.
 
 <table>
-<tr><th>Electronic parts </th><th>Mechanical parts</th></tr>
+<tr><th>Electronic parts </th>top<th>Mechanical parts</th></tr>
 <tr><td>
 
 | Component          | Price/unit  | Quantity  | Cost  |
