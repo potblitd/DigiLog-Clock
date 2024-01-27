@@ -44,7 +44,7 @@ With the axes position slightly changed from the previous version, the servo als
 </p>
 
 ### PCB
-The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. Here, spacers are placed on a long screw to hold the servo in a straight position against the PCB. The precise mounting of the servos is crucial to avoid the rotating disks rubbing each other. The outline of the PCB is 80mm high by 180mm wide.
+The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. The outline of the PCB is 80mm high by 180mm wide.
 
 <p align="center">
   <img src="images/pcb-front.JPG" width="800" />
@@ -60,6 +60,7 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 
 
 ### Assembly
+All 16 servo motors are mounted to the base PCB with 9mm spacers and long screws. The precise mounting of the servos is crucial to avoid the rotating disks rubbing each other. With 0.8mm thick PCBs for the disks, they are overlaying each other through 1mm spacers, keeping the total height only a little over 5mm. The front plate not being perfectly falt, is mounted on top of the base PCB with 8mm spacers in the corners. 
 
 <p align="center">
   <img src="images/assembly-back.JPG" width="800" />
