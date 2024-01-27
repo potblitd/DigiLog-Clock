@@ -41,6 +41,7 @@ With the axes position slightly changed from the previous version, the servo als
 
 <p align="center">
   <img src="images/servo-arragement.svg" width="600" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img src="images/front-plate.svg" width="600" />
 </p>
 
