@@ -95,7 +95,7 @@ The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo
 | CR1220 battery     | 1.120       | 1         | 1.12  |
 | 4P 2.54mm header   | 0.022       | 12        | 0.26  |
 | MGS90S servo       | 4.780       | 1         | 76.48 |
-| **Electronic total**   |         |           | **127.31** |
+| **Electronic total** |          |            | **127.31** |
 
 </td><td>
 
@@ -115,7 +115,7 @@ The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo
 | M3 nuts            | 0.060       | 4         | 0.24  |
 | 3.1*6 spacer       | 0.798       | 4         | 3.19  |
 | Front plate board  | 0.332       | 1         | 0.33  |
-| **Mechanical total**   |         |           | **137.62** |
+| **Mechanical total** |           |           | **137.62** |
 
 </td></tr> </table>
 
