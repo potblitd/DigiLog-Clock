@@ -40,8 +40,7 @@ The system is powered through a USB-C port (on a breakout board) and its status 
 With the axes position slightly changed from the previous version, the servo also needed to be adjusted but the idea remains the same. In this configuration, two digits must be separated by at least 20mm. The front plate covers the unwanted pointers.  
 
 <p align="center">
-  <img src="images/servo-arragement.svg" width="600" />
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="images/servo-arragement.svg" width="600" /><br/><br/>
   <img src="images/front-plate.svg" width="600" />
 </p>
 
