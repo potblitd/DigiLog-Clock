@@ -6,7 +6,6 @@ Rtc_Pcf8563 rtc;
 
 void setup() {
   // setup Attiny402
-  Serial.begin(9600);
   Wire.begin();
   // setup rtc
   rtc.initClock();
