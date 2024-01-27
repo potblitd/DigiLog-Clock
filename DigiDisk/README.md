@@ -67,7 +67,7 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 </p>
 
 ### Code
-
+The code, written in Arduino, uses librairies [PCA9685](https://github.com/NachtRaveVL/PCA9685-Arduino) and [Rtc_Pcf8563](https://github.com/elpaso/Rtc_Pcf8563).
 
 
 ### Cost
