@@ -71,10 +71,10 @@ The code, written in Arduino, uses librairies [PCA9685](https://github.com/Nacht
 
 
 ### Cost
-The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo motors it's 127.31 RMB (17.94 USD). The PCB disks, front plate and all kinds of mounting components come up to 140.59 RMB (19.83 USD). So, the total expenses for this clock are 266.78 RMB (37.63 USD). Since the most expensive items are the PCBs, buying larger quantities would decrease the unit price a lot.
+The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo motors it's 127.31 RMB (17.94 USD). The PCB disks, front plate and all kinds of mounting components come up to 137.62 RMB (19.39 USD). So, the total expenses for this clock are 264.93 RMB (37.33 USD). Since the most expensive items are the PCBs, buying larger quantities would decrease the unit price a lot.
 
 <table>
-<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><th>Electronic parts </th><th>Mechanical parts</th></tr>
 <tr><td>
 
 | Component          | Price/unit  | Quantity  | Cost  |
@@ -101,23 +101,21 @@ The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo
 
 | Component          | Price/unit  | Quantity  | Cost  |
 | ------------------ |------------:|----------:| -----:|
-| Base PCB           | 30.230      | 1         | 30.23 |
-| ATtiny402          | 3.090       | 1         | 3.09  |
-| PCF8563            | 2.000       | 1         | 2.00  |
-| PCA9685            | 8.630       | 1         | 8.63  |
-| CH340C             | 1.460       | 1         | 1.46  |
-| USB-C breakout     | 0.320       | 1         | 0.32  |
-| 1000uF capacitor   | 0.706       | 1         | 0.71  |
-| 0603 capacitor     | 0.025       | 10        | 0.25  |
-| 0603 resisitor     | 0.030       | 20        | 0.60  |
-| 0603 LED           | 0.015       | 1         | 0.02  |
-| FC-135 crystal     | 1.700       | 1         | 1.70  |
-| BAT721C diode      | 0.400       | 1         | 0.40  |
-| CR1220 retainer    | 0.050       | 1         | 0.05  |
-| CR1220 battery     | 1.120       | 1         | 1.12  |
-| 4P 2.54mm header   | 0.022       | 12        | 0.26  |
-| MGS90S servo       | 4.780       | 1         | 76.48 |
-| **Electronic total**   |         |           | **127.31** |
+| M2.5*16 servo      | 0.121       | 32        | 3.88  |
+| 2.7*7 spacer       | 0.898       | 32        | 28.74 |
+| 2.7*2 spacer       | 0.898       | 32        | 28.74 |
+| M2.5 nuts          | 0.093       | 32        | 2.97  |
+| Disk PCB           | 3.624       | 16        | 57.98 |
+| M2.5*4 disk 1      | 0.070       | 4         | 0.28  |
+| M2.5*5 disk 2      | 0.070       | 4         | 0.28  |
+| M2.5*6 disk 3 & 4  | 0.074       | 8         | 0.59  |
+| 2.6*1 spacer       | 0.620       | 8         | 4.96  |
+| 2.6*2 spacer       | 0.620       | 8         | 4.96  |
+| M3*14 front plate  | 0.117       | 4         | 0.47  |
+| M3 nuts            | 0.060       | 4         | 0.24  |
+| 3.1*6 spacer       | 0.798       | 4         | 3.19  |
+| Front plate board  | 0.332       | 1         | 0.33  |
+| **Mechanical total**   |         |           | **137.62** |
 
 </td></tr> </table>
 
