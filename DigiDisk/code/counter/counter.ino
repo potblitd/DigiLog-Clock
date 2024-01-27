@@ -94,10 +94,10 @@ void setup() {
 void loop() {
 
   for(int i=1; i<=9999; i++){
-    set_digit(i%10,1);
-    set_digit(floor((i%100)/10),2);
-    set_digit(floor((i%1000)/100),3);
-    set_digit(floor((i%10000)/1000),4);
+    set_digit((i%60)%10,1);
+    set_digit(floor((i%60)/10),2);
+    set_digit(floor((i/60)%10),3);
+    set_digit(floor(i/600),4);
     delay(1000);
   }
   
