@@ -75,7 +75,7 @@ The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo
 
 <table>
 <tr><th>Electronic parts </th><th>Mechanical parts</th></tr>
-<tr>top<td>
+<tr><td valign="top">
 
 | Component          | Price/unit  | Quantity  | Cost  |
 | ------------------ |------------:|----------:| -----:|
@@ -97,7 +97,7 @@ The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo
 | MGS90S servo       | 4.780       | 1         | 76.48 |
 | **Electronic total** |          |            | **127.31** |
 
-</td>top<td>
+</td><td valign="top">
 
 | Component          | Price/unit  | Quantity  | Cost  |
 | ------------------ |------------:|----------:| -----:|
