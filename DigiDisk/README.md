@@ -67,7 +67,7 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 </p>
 
 ### Code
-The code, written in Arduino, uses librairies [PCA9685](https://github.com/NachtRaveVL/PCA9685-Arduino) and [Rtc_Pcf8563](https://github.com/elpaso/Rtc_Pcf8563).
+The code, written in Arduino, uses librairies [PCA9685](https://github.com/NachtRaveVL/PCA9685-Arduino) and [Rtc_Pcf8563](https://github.com/elpaso/Rtc_Pcf8563). The PWM value for each disk position is established and then, the _set_digit_ function defines the 4 disk positions for every number. In the _setup_ section, the PWM frequency is set and all digits are set to display 0. During the loop, current minute and hour are checked from the real-time clock which are then used to update the digits with the _set_digit_ function.
 
 
 ### Cost
