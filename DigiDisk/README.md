@@ -14,7 +14,7 @@ This updated version of the DigiLog clock, called 'DigiDisk', is meant to improv
 Having overlapping disks with marked pointers instead of bar elements involved changing the 4 axes positions and pointers arrangement, and set the disk layer order to draw all 10 digits. With the code names, each digit can be defined by its disks positions. Since the rotating elements are overlapping each other, there is no need to plan the sequence diagram as done for the first version. This significantly simplifies the coding parts later on.
 
 <p align="center">
-  <img src="images/positions.svg" width="500" /> <br/><br/>
+  <img src="images/positions.svg" width="600" /> <br/><br/>
   <img align="middle" src="images/digits.svg" width="600" />
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <img align="middle" src="images/digidisk-animation.gif" width="200" />
@@ -37,14 +37,15 @@ The system is powered through a USB-C port (on a breakout board) and its status 
 </p>
 
 ### Display
-With the axes position slightly changed from the previous version, the servo also needed to be adjusted but the idea remains the same. In this configuration, two digits must be separated by at least 20mm.
+With the axes position slightly changed from the previous version, the servo also needed to be adjusted but the idea remains the same. In this configuration, two digits must be separated by at least 20mm. The front plate covers the unwanted pointers.  
 
 <p align="center">
-  <img src="images/servo-arragement.svg" height="250" />
+  <img src="images/servo-arragement.svg" width="600" />
+  <img src="images/front-plate.svg" width="600" />
 </p>
 
 ### PCB
-The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. Here, spacers are placed on a long screw to hold the servo in a straight position against the PCB. The precise mounting of the servos is crucial to avoid the rotating disks rubbing each other. The outline of the PCB is 80mm high by 180mm wide.
+The board not only integrates all the electronic components, but also includes the mounting holes for the servo motors. In this way, no additonal mounting plates must be manufactured. The outline of the PCB is 80mm high by 180mm wide.
 
 <p align="center">
   <img src="images/pcb-front.JPG" width="800" />
@@ -60,6 +61,7 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 
 
 ### Assembly
+All 16 servo motors are mounted to the base PCB with 9mm spacers and long screws. The precise mounting of the servos is crucial to avoid the rotating disks rubbing each other. With 0.8mm thick PCBs for the disks, they are overlaying each other through 1mm spacers, keeping the total height only a little over 5mm. The front plate not being perfectly falt, is mounted on top of the base PCB with 8mm spacers in the corners. 
 
 <p align="center">
   <img src="images/assembly-back.JPG" width="800" />
