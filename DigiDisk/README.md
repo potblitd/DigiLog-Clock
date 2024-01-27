@@ -73,6 +73,10 @@ The code, written in Arduino, uses librairies [PCA9685](https://github.com/Nacht
 ### Cost
 The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo motors it's 127.31 RMB (17.94 USD). The PCB disks, front plate and all kinds of mounting components come up to 140.59 RMB (19.83 USD). So, the total expenses for this clock are 266.78 RMB (37.63 USD). Since the most expensive items are the PCBs, buying larger quantities would decrease the unit price a lot.
 
+<table>
+<tr><th>Table 1 Heading 1 </th><th>Table 1 Heading 2</th></tr>
+<tr><td>
+
 | Component          | Price/unit  | Quantity  | Cost  |
 | ------------------ |------------:|----------:| -----:|
 | Base PCB           | 30.230      | 1         | 30.23 |
@@ -92,6 +96,30 @@ The PCB with all the components costs 50.83 RMB (7.16 USD) and with the 16 servo
 | 4P 2.54mm header   | 0.022       | 12        | 0.26  |
 | MGS90S servo       | 4.780       | 1         | 76.48 |
 | **Electronic total**   |         |           | **127.31** |
+
+</td><td>
+
+| Component          | Price/unit  | Quantity  | Cost  |
+| ------------------ |------------:|----------:| -----:|
+| Base PCB           | 30.230      | 1         | 30.23 |
+| ATtiny402          | 3.090       | 1         | 3.09  |
+| PCF8563            | 2.000       | 1         | 2.00  |
+| PCA9685            | 8.630       | 1         | 8.63  |
+| CH340C             | 1.460       | 1         | 1.46  |
+| USB-C breakout     | 0.320       | 1         | 0.32  |
+| 1000uF capacitor   | 0.706       | 1         | 0.71  |
+| 0603 capacitor     | 0.025       | 10        | 0.25  |
+| 0603 resisitor     | 0.030       | 20        | 0.60  |
+| 0603 LED           | 0.015       | 1         | 0.02  |
+| FC-135 crystal     | 1.700       | 1         | 1.70  |
+| BAT721C diode      | 0.400       | 1         | 0.40  |
+| CR1220 retainer    | 0.050       | 1         | 0.05  |
+| CR1220 battery     | 1.120       | 1         | 1.12  |
+| 4P 2.54mm header   | 0.022       | 12        | 0.26  |
+| MGS90S servo       | 4.780       | 1         | 76.48 |
+| **Electronic total**   |         |           | **127.31** |
+
+</td></tr> </table>
 
 
 
