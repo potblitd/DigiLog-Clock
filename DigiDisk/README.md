@@ -40,7 +40,7 @@ The system is powered through a USB-C port (on a breakout board) and its status 
 With the axes position slightly changed from the previous version, the servo also needed to be adjusted but the idea remains the same. In this configuration, two digits must be separated by at least 20mm.
 
 <p align="center">
-  <img src="images/servo-arragement.svg" height="250" />
+  <img src="images/servo-arragement.svg" width="800" />
 </p>
 
 ### PCB
