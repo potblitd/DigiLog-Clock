@@ -62,8 +62,9 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 ### Assembly
 
 <p align="center">
-  <img src="images/assembly-front.png" height="250" />
-  <img src="images/assembly-back.png" height="250" />
+  <img src="images/assembly-front.JPG" width="800" />
+  <img src="images/assembly-back.JPG" width="800" />
+  <img src="images/assembly.JPG" width="800" />
 </p>
 
 ### Code
