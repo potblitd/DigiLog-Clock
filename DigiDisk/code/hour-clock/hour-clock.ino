@@ -22,70 +22,60 @@ void set_digit(byte digit, byte disp){
       pwm.setChannelPWM(1+4*(disp-1), p0);
       pwm.setChannelPWM(2+4*(disp-1), p180);
       pwm.setChannelPWM(3+4*(disp-1), p180);
-      delay(1000);
       break;
     case 1:
       pwm.setChannelPWM(0+4*(disp-1), p180);
       pwm.setChannelPWM(1+4*(disp-1), p90);
       pwm.setChannelPWM(2+4*(disp-1), p180);
       pwm.setChannelPWM(3+4*(disp-1), p0);
-      delay(1000);
       break;
     case 2:
       pwm.setChannelPWM(0+4*(disp-1), p90);
       pwm.setChannelPWM(1+4*(disp-1), p90);
       pwm.setChannelPWM(2+4*(disp-1), p0);
       pwm.setChannelPWM(3+4*(disp-1), p180);
-      delay(1000);
       break;
     case 3:
       pwm.setChannelPWM(0+4*(disp-1), p90);
       pwm.setChannelPWM(1+4*(disp-1), p90);
       pwm.setChannelPWM(2+4*(disp-1), p90);
       pwm.setChannelPWM(3+4*(disp-1), p90);
-      delay(1000);
       break;
     case 4:
       pwm.setChannelPWM(0+4*(disp-1), p180);
       pwm.setChannelPWM(1+4*(disp-1), p0);
       pwm.setChannelPWM(2+4*(disp-1), p90);
       pwm.setChannelPWM(3+4*(disp-1), p0);
-      delay(1000);
       break;
     case 5:
       pwm.setChannelPWM(0+4*(disp-1), p0);
       pwm.setChannelPWM(1+4*(disp-1), p0);
       pwm.setChannelPWM(2+4*(disp-1), p90);
       pwm.setChannelPWM(3+4*(disp-1), p90);
-      delay(1000);
       break;
     case 6:
       pwm.setChannelPWM(0+4*(disp-1), p0);
       pwm.setChannelPWM(1+4*(disp-1), p0);
       pwm.setChannelPWM(2+4*(disp-1), p90);
       pwm.setChannelPWM(3+4*(disp-1), p180);
-      delay(1000);
       break;
     case 7:
       pwm.setChannelPWM(0+4*(disp-1), p90);
       pwm.setChannelPWM(1+4*(disp-1), p90);
       pwm.setChannelPWM(2+4*(disp-1), p180);
       pwm.setChannelPWM(3+4*(disp-1), p0);
-      delay(1000);
       break;
     case 8:
       pwm.setChannelPWM(0+4*(disp-1), p90);
       pwm.setChannelPWM(1+4*(disp-1), p0);
       pwm.setChannelPWM(2+4*(disp-1), p90);
       pwm.setChannelPWM(3+4*(disp-1), p180);
-      delay(1000);
       break;
     case 9:
       pwm.setChannelPWM(0+4*(disp-1), p90);
       pwm.setChannelPWM(1+4*(disp-1), p0);
       pwm.setChannelPWM(2+4*(disp-1), p90);
       pwm.setChannelPWM(3+4*(disp-1), p90);
-      delay(1000);
       break;
   }
 }
@@ -114,5 +104,7 @@ void loop() {
   set_digit(floor(minute/10),2);
   set_digit(hour%10,3);
   set_digit(floor(hour/10),4);
+
+  delay(1000);
   
 }
