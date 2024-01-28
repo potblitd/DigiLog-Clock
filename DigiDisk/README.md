@@ -69,8 +69,10 @@ All 16 servo motors are mounted to the base PCB with 9mm spacers and long screws
 
 <p align="center">
   <img src="images/assembly-back.JPG" width="800" />
+  <img src="images/assembly-diag.JPG" width="800" />
+  <img src="images/assembly-side.JPG" width="800" />
+  <img src="images/assembly-disks.JPG" width="800" />
   <img src="images/assembly-front.JPG" width="800" />
-  <img src="images/assembly.JPG" width="800" />
 </p>
 
 ### Code
