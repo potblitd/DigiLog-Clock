@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="images/counter.gif" width="600" />
+</p>
 
 ### Idea
 This updated version of the DigiLog clock, called 'DigiDisk', is meant to improve the previous design but also change a few aspects to meet the following requirements :
