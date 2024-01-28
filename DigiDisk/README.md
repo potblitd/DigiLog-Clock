@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/counter.MP4" width="600" />
+  <img src="images/counter.gif" width="600" />
 </p>
 
 ### Idea
@@ -57,7 +57,7 @@ The board not only integrates all the electronic components, but also includes t
 </p>
 
 ### Mechanical parts
-Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The disks are actually made from thin PCBs with silkscreen pointers as the thickness and material is very suitable. For the front plate, a 1.5mm wood board was cut and painted black.
+Since the PCB acts as the mounting plate, only the rotating disks and the front plate must be manufactured. The disks are actually made from thin PCBs with silkscreen pointers as the thickness and material is very suitable. For the front plate, a 1mm PVC board was cut and painted black.
 
 <p align="center">
   <img src="images/parts.JPG" width="800" />
@@ -65,7 +65,7 @@ Since the PCB acts as the mounting plate, only the rotating disks and the front 
 
 
 ### Assembly
-All 16 servo motors are mounted to the base PCB with 9mm spacers and long screws. The precise mounting of the servos is crucial to avoid the rotating disks rubbing each other. With 0.8mm thick PCBs for the disks, they are overlaying each other through 1mm spacers, keeping the total height only a little over 5mm. The front plate not being perfectly falt, is mounted on top of the base PCB with 8mm spacers in the corners. 
+All 16 servo motors are mounted to the base PCB with 9mm spacers and long screws. The precise mounting of the servos is crucial to avoid the rotating disks rubbing each other. With 0.8mm thick PCBs for the disks, they are overlaying each other through 1mm spacers, keeping the total height only a little over 5mm. The front plate not being perfectly falt, is mounted on top of the base PCB with 6mm spacers in the corners. 
 
 <p align="center">
   <img src="images/assembly-back.JPG" width="800" />
